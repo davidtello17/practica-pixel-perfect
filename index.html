@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Disney</title>
 </head>
+
 <body>
     <nav class="navbar">
-            <div class="navbar__left">
-                <img src="img/logo.png" alt="Disney" class="navbar__logo">
-                <ul class="navbar__menu">
-                    <li><a href="#disney-plus" class="navbar__link">DISNEY+</a></li>
-                    <li><a href="#parks-and-travel" class="navbar__link">PARKS & TRAVEL</a></li>
-                    <li><a href="#movies" class="navbar__link">MOVIES</a></li>
-                    <li><a href="#shop" class="navbar__link">SHOP</a></li>
-                    <li><a href="#more" class="navbar__link">MORE</a></li>
-                </ul>
-            </div>
-            <div class="navbar__right">
-                    <a href="" class="navbar__login">LOG IN</a>
-                    <form action="" class="navbar__search">
-                        <input type="text" placeholder="Search" class="navbar__input">
-                        <button class="navbar__button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-            </div>
+        <div class="navbar__left">
+            <img src="img/logo.png" alt="Disney" class="navbar__logo">
+            <ul class="navbar__menu">
+                <li><a href="#disney-plus" class="navbar__link">DISNEY+</a></li>
+                <li><a href="#parks-and-travel" class="navbar__link">PARKS & TRAVEL</a></li>
+                <li><a href="#movies" class="navbar__link">MOVIES</a></li>
+                <li><a href="#shop" class="navbar__link">SHOP</a></li>
+                <li><a href="#more" class="navbar__link">MORE</a></li>
+            </ul>
+        </div>
+        <div class="navbar__right">
+            <a href="" class="navbar__login">LOG IN</a>
+            <form action="" class="navbar__search">
+                <input type="text" placeholder="Search" class="navbar__input">
+                <button class="navbar__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
     </nav>
 
     <section class="banner">
@@ -62,7 +64,7 @@
                     <img src="img/shop-image-3.png" alt="Muñeca de Blancanieves" class="shop-card__image">
                     <div class="shop-card__body">
                         <h3 class="shop-card__title">Disney Store</h3>
-                        <p class="shop-card__text">NEW Disney’s Snow White 16" Limited Edition Doll</p>
+                        <p class="shop-card__text">NEW Disney's Snow White 16" Limited Edition Doll</p>
                         <a href="#" class="shop-card__link">SHOP NOW</a>
                     </div>
                 </article>
@@ -76,7 +78,28 @@
                 </article>
             </div>
         </section>
-        <section id="disney-plus"></section>
+
+        <section id="disney-plus">
+            <h2 class="disney-plus__title">Explore More Disney+</h2>
+            <div class="disney-plus__grid">
+                <article class="plus-card">
+                    <img src="img/disney-plus-1.png" alt="Moana 2" class="plus-card__image">
+                    <p class="plus-card__text">Moana 2 is now available, only on Disney+.</p>
+                    <a href="#" class="plus-card__link">AVAILABLE ON DISNEY +</a>
+                </article>
+                <article class="plus-card">
+                    <img src="img/disney-plus-2.png" alt="Daredevil Born Again" class="plus-card__image">
+                    <p class="plus-card__text">Marvel Television's all-new series is now streaming on Disney+.</p>
+                    <a href="#" class="plus-card__link">STREAM NOW</a>
+                </article>
+                <article class="plus-card">
+                    <img src="img/disney-plus-3.png" alt="Next on Disney+" class="plus-card__image">
+                    <p class="plus-card__text">Everything now coming to Disney+ this month!</p>
+                    <a href="#" class="plus-card__link">LEARN MORE</a>
+                </article>
+            </div>
+        </section>
+
         <section id="movies"></section>
         <section id="parks-and-travel"></section>
         <section id="more"></section>
@@ -84,4 +107,5 @@
 
     <footer></footer>
 </body>
+
 </html>
