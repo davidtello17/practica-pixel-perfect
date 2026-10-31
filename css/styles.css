@@ -59,3 +59,52 @@ body {
     color: #0072d2;
     cursor: pointer;
 }
+.banner {
+    height: 520px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    background-image: url("../img/banner-background.png");
+    background-size: cover;
+    background-position: center;
+}
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.banner__title {
+    width: 340px;
+}
+
+.banner__text {
+    color: white;
+    font-size: 14px;
+}
+
+.banner__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.banner__button {
+    width: 230px;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.banner__button--primary {
+    background-color: #db5243;
+}
+
+.banner__button--outline {
+    border: 2px solid white;
+}
