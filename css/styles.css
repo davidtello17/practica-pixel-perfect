@@ -3,3 +3,280 @@
     margin: 0;
     padding: 0;
 }
+
+.img-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#movies {
+    background-color: #f3f4f6;
+    padding: 3rem 1.5rem;
+}
+
+#movies .section-title {
+    color: #1f2937;
+}
+
+.movies-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.movie-card-poster {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.25;
+}
+
+.movie-card-date {
+    font-size: 0.6875rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+#parks-and-travel {
+    background-color: #e5e7eb;
+    padding: 3rem 1.5rem;
+}
+
+#parks-and-travel .section-title {
+    color: #1f2937;
+}
+
+.parks-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.park-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.park-card-img {
+    height: 240px;
+    width: 100%;
+}
+
+.park-card-body {
+    padding: 1.5rem;
+}
+
+.park-card-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.park-card-desc {
+    font-size: 0.75rem;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+.park-card-footer {
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+.park-card-link {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-transform: uppercase;
+}
+
+.park-card-link:hover {
+    text-decoration: underline;
+}
+
+#more {
+    background-color: #e2f9f8;
+    padding: 3rem 1.5rem;
+}
+
+.credit-banner-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.credit-banner-img {
+    width: 50%;
+    height: 220px;
+}
+
+.credit-banner-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.credit-banner-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #1e3a8a;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.credit-banner-details {
+    font-size: 0.75rem;
+    color: #172554;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.credit-banner-details strong {
+    font-size: 0.875rem;
+}
+
+.credit-banner-subtext {
+    font-size: 0.625rem;
+    color: #4b5563;
+}
+
+.btn-purple {
+    background-color: #9333ea;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.6rem 1.5rem;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.btn-purple:hover {
+    background-color: #7e22ce;
+}
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 2rem 1.5rem;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer-logo {
+    height: 24px;
+    width: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    color: #4b5563;
+    max-width: 900px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 0.625rem;
+    color: #9ca3af;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+    .shop-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movies-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .disneyplus-container {
+        grid-template-columns: 1fr;
+    }
+
+    .parks-container {
+        grid-template-columns: 1fr;
+    }
+
+    .credit-banner-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .credit-banner-img,
+    .credit-banner-info {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .shop-container {
+        grid-template-columns: 1fr;
+    }
+
+    .movies-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box {
+        display: none;
+    }
+}
